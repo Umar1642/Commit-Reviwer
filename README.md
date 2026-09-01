@@ -3,6 +3,10 @@ This is a terminal based application that runs against git repository (local or 
 to review the quality of the most recent commit messages. The LLM gives a rating of excellent, good, or bad, and gives a brief
 explanation for the rating. This application creates an HTML report, that runs on a simple server hosted on port 3546. The HTML report contains all the ratings the LLM gave as well as the explanation of the rating in an organized manner. The ratings are also available as logs in the terminal as well. This application works for public and private repos on GitHub.
 
+# Important Note:
+You do need to create a .env file, this is where you will be storing your API key in an environment variable. 
+To get the API Key, go to https://openrouter.ai/openai/gpt-oss-120b:free, and follow the instructions to get the API key.
+
 
 # Install Instructions:
 1. Go to the directory you have saved/downloaded the zip folder
