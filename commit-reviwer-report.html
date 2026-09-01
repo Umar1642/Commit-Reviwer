@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commit Review - NBA Statline predictor</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 860px;
+            margin: 40px auto;
+            background: #0d1117; 
+            color: #e6edf3;
+        }
+        h1{
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 12px;
+        }
+        .summary{
+            background: #161b22;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 24px; 
+        }
+        .commit{
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .commit h3{
+            margin: 0 0 8px 0;
+            font-family: monospace;
+        }
+        .meta{
+            color: #8b949e;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        .badge{
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        .excellent{
+            background: #1a4a2e;
+            color: #3fb950;
+        }
+        .good{
+            background: #2b2a14;
+            color:#d29922;
+        }
+        .bad{
+            background:#4a1a1a;
+            color: #f85149;
+        }
+        .reasoning{
+            margin-top: 10px;
+            color: #c9d1d9;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Commit Reviewer Report</h1>
+
+    <div class="summary">
+        <p><strong>Repo:</strong> NBA Statline predictor</p>
+        <p><strong>Commits Reviewed:</strong> 8</p>
+        <p><strong>Generated:</strong> 2026-06-06/24/26 20:29:11</p>
+    </div>
+
+    
+    <div class="commit">
+        <h3>91828cb</h3>
+
+        <div class="meta">
+            <strong>Umar1642</strong> — 2026-05-23 18:44:24-04:00
+        </div>
+
+        <p class="message">
+            Properly updated
+        </p>
+
+        <span class="badge bad">
+            BAD
+        </span>
+
+        <p class="reasoning">
+            The message "Properly updated" is vague and does not explain what was changed, why, or any relevant context, making it unhelpful for future readers.
+        </p>
+    </div>
+    
+    <div class="commit">
+        <h3>4588d6e</h3>
+
+        <div class="meta">
+            <strong>Umar1642</strong> — 2026-05-23 18:43:22-04:00
+        </div>
+
+        <p class="message">
+            Updated Read me
+        </p>
+
+        <span class="badge bad">
+            BAD
+        </span>
+
+        <p class="reasoning">
+            The commit message is vague and non‑descriptive; it doesn't explain what was changed in the README, making it hard for reviewers to understand the impact of the commit.
+        </p>
+    </div>
+    
+    <div class="commit">
+        <h3>87c1fc6</h3>
+
+        <div class="meta">
+            <strong>Umar1642</strong> — 2026-05-23 18:28:35-04:00
+        </div>
+
+        <p class="message">
+            Removed .venv folder from repo
+        </p>
+
+        <span class="badge good">
+            GOOD
+        </span>
+
+        <p class="reasoning">
+            The message clearly states the action taken ('Removed .venv folder from repo'), which is concise and understandable. However, it lacks context such as why the folder was removed (e.g., to avoid committing virtual environments) or any related steps, preventing it from being exemplary.
+        </p>
+    </div>
+    
+    <div class="commit">
+        <h3>c71e0b7</h3>
+
+        <div class="meta">
+            <strong>Umar1642</strong> — 2026-05-23 18:23:24-04:00
+        </div>
+
+        <p class="message">
+            Merge branch 'main' of github.com:Umar1642/NBA-Statline-Predictor
+        </p>
+
+        <span class="badge bad">
+            BAD
+        </span>
+
+        <p class="reasoning">
+            The commit message is the default merge message and provides no context about the changes introduced, making it unhelpful for future reference.
+        </p>
+    </div>
+    
+    <div class="commit">
+        <h3>4a920c7</h3>
+
+        <div class="meta">
+            <strong>Umar1642</strong> — 2026-05-23 18:22:45-04:00
+        </div>
+
+        <p class="message">
+            v1 done
+        </p>
+
+        <span class="badge bad">
+            BAD
+        </span>
+
+        <p class="reasoning">
+            The commit message "v1 done" provides no useful information about what changes were made, why they were made, or any context, making it unhelpful for future reviewers and version history navigation.
+        </p>
+    </div>
+    
+    <div class="commit">
+        <h3>289fd8b</h3>
+
+        <div class="meta">
+            <strong>Umar Marikar</strong> — 2026-05-14 20:17:42-04:00
+        </div>
+
+        <p class="message">
+            Delete README.md
+        </p>
+
+        <span class="badge bad">
+            BAD
+        </span>
+
+        <p class="reasoning">
+            The commit only deletes README.md without any justification or accompanying changes, which removes essential project documentation and provides no context or improvement, making it a poor commit practice.
+        </p>
+    </div>
+    
+    <div class="commit">
+        <h3>51da8e3</h3>
+
+        <div class="meta">
+            <strong>Umar1642</strong> — 2026-05-14 20:17:08-04:00
+        </div>
+
+        <p class="message">
+            Initial Commit
+        </p>
+
+        <span class="badge bad">
+            BAD
+        </span>
+
+        <p class="reasoning">
+            The message "Initial Commit" provides no useful information about what was added, the purpose of the commit, or any context, making it unhelpful for future reference and code history navigation.
+        </p>
+    </div>
+    
+    <div class="commit">
+        <h3>74a35d3</h3>
+
+        <div class="meta">
+            <strong>Umar1642</strong> — 2026-05-14 19:05:02-04:00
+        </div>
+
+        <p class="message">
+            first commit
+        </p>
+
+        <span class="badge bad">
+            BAD
+        </span>
+
+        <p class="reasoning">
+            The commit message "first commit" provides no useful information about the changes made, lacks detail, and does not follow conventional commit guidelines, making it unhelpful for future reference.
+        </p>
+    </div>
+    
+</body>
+</html>

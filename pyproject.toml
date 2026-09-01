@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "powerline-connect-technical-challenge"
+version = "2026.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "gitpython",
+    "httpx",
+    "python-dotenv",
+    "jinja2"
+]
+
+
+[project.scripts]
+review_commits = "review_commits.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

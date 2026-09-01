@@ -1,0 +1,2 @@
+[console_scripts]
+review_commits = review_commits.cli:main

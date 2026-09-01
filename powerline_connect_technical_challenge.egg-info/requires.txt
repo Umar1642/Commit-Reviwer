@@ -1,0 +1,4 @@
+gitpython
+httpx
+python-dotenv
+jinja2

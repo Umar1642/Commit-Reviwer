@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commit Review - {{  repo_name  }}</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 860px;
+            margin: 40px auto;
+            background: #0d1117; 
+            color: #e6edf3;
+        }
+        h1{
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 12px;
+        }
+        .summary{
+            background: #161b22;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 24px; 
+        }
+        .commit{
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .commit h3{
+            margin: 0 0 8px 0;
+            font-family: monospace;
+        }
+        .meta{
+            color: #8b949e;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        .badge{
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        .excellent{
+            background: #1a4a2e;
+            color: #3fb950;
+        }
+        .good{
+            background: #2b2a14;
+            color:#d29922;
+        }
+        .bad{
+            background:#4a1a1a;
+            color: #f85149;
+        }
+        .reasoning{
+            margin-top: 10px;
+            color: #c9d1d9;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Commit Reviewer Report</h1>
+
+    <div class="summary">
+        <p><strong>Repo:</strong> {{  repo_name  }}</p>
+        <p><strong>Commits Reviewed:</strong> {{  commits | length  }}</p>
+        <p><strong>Generated:</strong> {{  generated_at  }}</p>
+    </div>
+
+    {% for commit in commits %}
+    <div class="commit">
+        <h3>{{ commit.hash }}</h3>
+
+        <div class="meta">
+            <strong>{{ commit.author }}</strong> — {{ commit.date }}
+        </div>
+
+        <p class="message">
+            {{ commit.message }}
+        </p>
+
+        <span class="badge {{ commit.review.rating | lower }}">
+            {{ commit.review.rating | upper }}
+        </span>
+
+        <p class="reasoning">
+            {{ commit.review.reasoning }}
+        </p>
+    </div>
+    {% endfor %}
+</body>
+</html>

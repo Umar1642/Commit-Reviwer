@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: powerline-connect-technical-challenge
+Version: 2026.0.0
+Requires-Python: >=3.11
+Requires-Dist: gitpython
+Requires-Dist: httpx
+Requires-Dist: python-dotenv
+Requires-Dist: jinja2
